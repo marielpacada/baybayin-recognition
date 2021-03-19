@@ -71,18 +71,10 @@ model.fit(train_images, train_labels, validation_data=(
     test_images, test_labels), epochs=5)
 
 # test_acc = model.evaluate(test_images, test_labels)
-
-# ~0.94 accuracy
 # print('Test accuracy:', test_acc)
 
+# ~0.94 accuracy
 
+""" ---------- SAVE MODEL ---------- """
 
 tfjs.converters.save_keras_model(model, "public/model/")
-
-
-
-
-# model_json = model.to_json()
-# with open("model.json", "w") as json_file:
-#     json_file.write(model_json)
-# model.save_weights("model.h5")
