@@ -1,4 +1,2 @@
 .DS_Store
-.Rapp.history
-.ipynb_checkpoints/
-model.h5
+*.bin
