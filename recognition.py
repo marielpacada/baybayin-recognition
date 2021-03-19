@@ -78,4 +78,4 @@ with open("model.json", "w") as json_file:
 model.save_weights("model.h5")
 
 # ~0.93 accuracy
-print('Test accuracy:', test_acc)
+# print('Test accuracy:', test_acc)
