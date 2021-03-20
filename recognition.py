@@ -13,7 +13,8 @@ from sklearn.preprocessing import LabelEncoder
 images = []
 labels = []
 
-
+""" Converts raw image vector to a normalized 28-by-28 image array
+"""
 def makeFinalArr(image_arr):
     new_img_arr = []
     for row_num in range(len(image_arr)):
@@ -23,7 +24,8 @@ def makeFinalArr(image_arr):
         new_img_arr.append(np.array(inner))
     return np.array(new_img_arr)
 
-
+""" Iterates through 9,845 jpg files to prepare train and test data
+"""
 for filename in os.listdir("baybayin-images"):
     # populate image dataset
     im = ImageOps.invert(Image.open("baybayin-images/" + filename))
@@ -34,6 +36,9 @@ for filename in os.listdir("baybayin-images"):
     # populate label dataset
     label = filename.split(".")[0]
     labels.append(label)
+
+# contains array of all 63 classes
+# classes = np.unique(np.array(labels))
 
 # integer and one-hot encode label dataset
 label_encoder = LabelEncoder()
@@ -77,4 +82,4 @@ model.fit(train_images, train_labels, validation_data=(
 
 """ ---------- SAVE MODEL ---------- """
 
-tfjs.converters.save_keras_model(model, "public/model/")
+# tfjs.converters.save_keras_model(model, "public/model/")
