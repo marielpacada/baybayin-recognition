@@ -13,11 +13,12 @@ html body {
     align-items: center;
 }
 
-.col {
+.column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 
 .header {
@@ -43,7 +44,7 @@ html body {
 }
 
 .instructions {
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 
 .instructions>p {
@@ -60,7 +61,7 @@ html body {
     background-size: contain;
 }
 
-.chosen-char { 
+.chosen-char {
     height: 75px;
     width: 75px;
     margin: 0 3rem;
@@ -82,9 +83,10 @@ html body {
 .dropdown-menu>p {
     margin: 0;
     border-bottom: 1px solid #CECECE;
+    cursor: pointer;
 }
 
-.write { 
+.write {
     margin-bottom: 3rem;
 }
 
@@ -96,27 +98,33 @@ canvas {
     margin-bottom: 1rem;
 }
 
-
-
-/* ---------------------------------------------------------- */
-
-
-
-
-
-
-
-#predicted-letter {
-    font-size: 2.5em;
-    color: #65bef0;
+.canvas-div {
+    margin-right: 4rem;
 }
 
-#top3-letter {
-    font-size: 1.5em;
-    font-weight: 300;
+.info {
+    align-items: flex-start;
+    height: 206px;
+    width: 375px;
+    align-self: flex-start;
 }
 
-#top3-letter span {
+.predicted-letter {
+    color: #65BEF0;
+    font-weight: bold;
+}
+
+.comment { 
+    margin-top: 1.5rem;
+}
+
+.top-three {
+    margin-top: 3.5rem;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.top-three>span { 
     font-weight: 400;
     color: #65bef0;
 }

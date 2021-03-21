@@ -107,41 +107,27 @@
     </div>
 
     <div class="row write">
-        <div class="col">
+        <div class="column canvas-div">
             <canvas></canvas>
-            <button type="button" class="btn btn-light">clear</button>
+            <button type="button" class="btn btn-light clear-btn">clear</button>
         </div>
-
+        <div class="column info">
+            <h4>hmm, looks like...</h4>
+            <h3 class="predicted-letter">___</h3>
+            <h4 class="comment">___________</h4>
+            <p class="top-three">__________________________</p>
+        </div>
 
 
 
     </div>
 
 
-
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col canvas">
-                <canvas id="canvas"></canvas>
-                <button id="clear-canvas">Clear</button>
-            </div>
-            <div class="col info">
-                <h3>Prediction</h3>
-                <p id="predicted-letter">Draw an uppercase letter</p>
-                <h3>Top 3</h3>
-                <p id="top3-letter"></p>
-            </div>
-        </div>
-    </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/paint.js"></script>
     <script src="js/predict.js"></script>
-    <script src="js/character.js"></script>
 </body>
 
 </html>
