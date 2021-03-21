@@ -6,7 +6,7 @@ html body {
     margin: 0;
 }
 
-.row { 
+.row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,7 +24,7 @@ html body {
     width: auto;
 }
 
-.subheader { 
+.subheader {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -32,75 +32,40 @@ html body {
 
 .subheader>p {
     width: 70%;
-    color: #cecece;
+    color: #CECECE;
 }
 
-.instructions>p { 
+.instructions>p {
     width: auto;
     padding: .5rem;
     color: #51418B;
     background-color: white;
 }
 
-.dropdown-menu {         
-    max-height: 10rem;
+.chosen-char {
+    width: 100px;
+    height: 100px;
+    background-color: #CECECE;
+    margin-right: 3rem;
+}
+
+.dropdown-menu.show {
+    max-height: 12rem;
     overflow-y: auto;
-  }
+    padding: .2rem 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h3 {
+.dropdown-menu>p {
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.3em;
-    font-weight: 300;
-    letter-spacing: 3px;
-    color: #cecece;
+    border-bottom: 1px solid #CECECE;
 }
 
-a {
-    text-decoration: none;
-    color: #cecece;
-}
-
-a:hover {
-    text-decoration: none;
-    color: white;
-}
+/* ---------------------------------------------------------- */
 
 .container {
     width: 750px;
     margin-top: 50px;
 }
-
 
 .canvas {
     flex: 0 0 200px;
