@@ -77,7 +77,7 @@ $(function () {
 
     $(".dropdown-item").click(function () {
         $char = $(this);
-        const imageFolder = "/chosen-images/";
+        const imageFolder = "/learn-baybayin/chosen-images/";
         const charImage = imageFolder + $char.text() + ".jpg";
         $(".chosen-img").css("background-image", "url(" + charImage + ")")
         $(".chosen-char").text($char.text());
