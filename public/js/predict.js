@@ -1,5 +1,5 @@
 {
-    const canvas = $("#canvas")[0];
+    const canvas = $("canvas")[0];
     const context = canvas.getContext('2d');
     const clearCanvas = $("#clear-canvas")[0]
     const predictedLetter = document.getElementById('predicted-letter');

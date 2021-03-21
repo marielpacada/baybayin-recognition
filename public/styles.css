@@ -13,6 +13,13 @@ html body {
     align-items: center;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     padding: 3rem 3rem 1.5rem 3rem;
     margin-bottom: 0;
@@ -35,6 +42,10 @@ html body {
     color: #CECECE;
 }
 
+.instructions {
+    margin-bottom: 3rem;
+}
+
 .instructions>p {
     width: auto;
     padding: .5rem;
@@ -42,11 +53,24 @@ html body {
     background-color: white;
 }
 
-.chosen-char {
+.chosen-img {
     width: 100px;
     height: 100px;
     background-color: #CECECE;
-    margin-right: 3rem;
+    background-size: contain;
+}
+
+.chosen-char { 
+    height: 75px;
+    width: 75px;
+    margin: 0 3rem;
+    line-height: 75px;
+    text-align: center;
+    padding: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #65bef0;
+    border: 1px solid #CECECE;
 }
 
 .dropdown-menu.show {
@@ -60,44 +84,27 @@ html body {
     border-bottom: 1px solid #CECECE;
 }
 
-/* ---------------------------------------------------------- */
-
-.container {
-    width: 750px;
-    margin-top: 50px;
+.write { 
+    margin-bottom: 3rem;
 }
 
-.canvas {
-    flex: 0 0 200px;
-}
-
-#canvas {
+canvas {
     display: block;
-    border: 3px solid #65bef0;
+    border: 3px solid #65BEF0;
     border-radius: 3px;
     cursor: crosshair;
+    margin-bottom: 1rem;
 }
 
-.canvas button {
-    margin: 10px auto 0;
-    padding: 4px 10px;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #65bef0;
-    border: 2px solid #65bef0;
-    border-radius: 3px;
-    background: #1c1c2a;
-    cursor: pointer;
-}
 
-#clear-canvas {
-    display: block;
-}
 
-.info {
-    color: white;
-}
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
 
 #predicted-letter {
     font-size: 2.5em;
